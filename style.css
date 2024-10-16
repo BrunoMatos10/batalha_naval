@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('batalhanaval.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+header {
+    text-align: center;
+    background-color: #02010a;
+    color: #00ccff;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-board {
+    top: 50px;
+    position: relative;
+    left: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* Matriz 5x5 */
+    gap: 5px;
+}
+
+.cell {
+    width: 80px; /* Tamanho da imagem */
+    height: 80px;
+    background-image: url('pexels-bt3gl-3894157-removebg-preview.png'); /* Imagem de fundo da agua*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    position: relative;
+    top: 30px;
+    left: 300px;
+    margin: 50px;
+}
+
+button {
+    margin: 10px;
+}
+
+.score {
+    position: relative;
+    left: 300px;
+    color: white;
+    display: none; /* Ocultar score até o primeiro tiro */
+}
